@@ -1,12 +1,20 @@
-# React + Vite
+[Preview](https://product-detilas-add-cart.netlify.app/) 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+React Product App with Bookmark & Duplicate Alert Feature
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This React application is designed to fetch and display products from an external API in a clean, user-friendly interface. It includes detailed product views and a bookmarking system using the browser's localStorage.
 
-## Expanding the ESLint configuration
+Key Features:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Product Listing: Fetches and displays products from an API on the main page.
+
+2. Single Product Page: Clicking a product navigates to a detailed view with more information.
+
+3. Mark as Read (Bookmarking): Users can click a "Mark as Read" button to save products to localStorage.
+
+4. Duplicate Alert: If a product already exists in localStorage, an alert notifies the user that the product is already bookmarked.
+
+5. Booklist Page: Displays a list of all saved products by reading from localStorage.
+
+This project uses React Router for smooth page navigation and manages state and side effects with React hooks. It also provides persistent data storage using localStorage, ensuring bookmarked products remain available across sessions.
